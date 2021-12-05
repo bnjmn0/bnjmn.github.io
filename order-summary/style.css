@@ -1,0 +1,115 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+body{
+    background: url('./images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-color:hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.himg{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    margin: 30px 0px auto;
+    
+    
+}
+
+.main{
+    border-radius:14px;
+    margin:50px auto;
+    background-color:white;
+    text-align:center;
+    width:350px;
+    height:525px;
+    
+}
+
+.p1{
+    font-size: 16px;
+    margin: 25px auto;
+    width:270px;
+    color:hsl(224, 23%, 55%);
+}
+
+
+
+.plan{
+    display: flex;
+    width: 300px;
+    height: 70px;
+    background-color: hsl(225, 100%, 98%);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.plan-image{
+    background: url("./images/icon-music.svg") no-repeat;
+    margin:10px;
+    width: 50px;
+    height: 50px;
+}
+
+.plan-detail{
+    margin:20px;
+    flex-direction: column;
+}
+
+.ph{
+    margin-top: -5px;
+}
+
+.p2{
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+}
+
+.btn{
+    margin:25px auto;
+    background: none;
+    border:0;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color:hsl(224, 23%, 55%);
+}
+
+.btn-proceed{
+    width:300px;
+    height: 40px;
+    margin:20px;
+    border:0;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-proceed:hover{
+    background:hsl(224, 23%, 55%);
+}
+
+.btn-cancel{
+    border:0;
+    color: hsl(224, 23%, 55%);
+    background:none;
+    font-weight: bold;
+}
+
+.btn-cancel:hover{
+    color:hsl(223, 47%, 23%);
+}
