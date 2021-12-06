@@ -1,163 +1,180 @@
-* {
-    padding:0; 
-    
+*{
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    color:wheat;
-    display:flex;
-    background-color: hsl(226, 43%, 10%);
-    justify-content: center;
-    align-items: center;
-    margin:120px;
-    margin-left:150px;
+html{
+    background: url("./images/bg-top.svg") no-repeat, url("./images/bg-bottom.svg") no-repeat; 
+    background-color: hsl(240, 84%, 95%);
+    background-size:auto, auto;
+    background-position:right, left;
+    background-position-y: -70px, 350px;
+    color:hsl(233, 13%, 49%);
 }
 
 h1{
-    margin-left:20px;
+    font-size:56px;
+    font-weight: bold;
+    color:hsl(232, 13%, 33%);
 }
 
-h4{
-    margin-left:20px;
+h2{
+    font-size:x-large;
+    color:hsl(233, 13%, 49%);
 }
 
-
-
-button{ 
-    margin-left:10px;
+hr{
+    width: 250px;
+    border:0;
+    height: 1px;
+    background: lightgray;
+    margin:10px;
 }
 
+button{
+    background-image:linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border:0;
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top:15px;
+    color:hsl(240, 78%, 98%);
+    text-transform: uppercase;
+    font-size:11px;
+    letter-spacing: 3px;
+}
+
+.pricing{
+    display:flex;
+    flex-wrap: wrap;
+    width:200px;
+    margin-left:605px;
+    justify-content: center;
+    font-size:small;
+    color:hsl(234, 14%, 74%);
+}
 
 .container{
     display:flex;
-    width: 850px;
-    height: 400px;  
+    flex-direction: row;
+    width:1000px;
+    margin:60px 250px;
+    gap:3px;
+    font-size: medium;
 }
 
-.box-container{
+.plan-basic, .plan-proffesional, .plan-master{
     display:flex;
-    flex-wrap: wrap;
-    gap:10px 20px;
-    margin-left: 25px;
-}
-
-.profile{
-    display:flex;
-    height:385px;
+    width:300px;
+    height:370px;
     flex-direction: column;
-    background-color: hsl(235, 46%, 20%);
-    border-radius: 10px;
-}
-
-div.profile-img{
-    margin: 20px;
-    content:url("./images/image-jeremy.png");
-    width:60px;
-    height: 60px;
-}
-
-.p-top{
-    display:block;
-    background-color: hsl(246, 80%, 60%);
-    width: 190px;
-    height: 300px;
-    border-radius: 10px;
-    
-}
-
-.work, .play, .study, .exercise, .social, .care{
-    margin-top:33px;
-    display:flex;
-    width: 190px;
-    height: 147px;
-    background-color: hsl(235, 46%, 20%);
+    background: hsl(240, 78%, 98%);
     align-items: center;
     border-radius: 10px;
+}
+
+.plan-basic:hover, .plan-proffesional:hover, .plan-master:hover{
+    height: 390px;
+    margin-top:-10px;
+    background-image:linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color:hsl(240, 78%, 98%);
+}
+
+.plan-basic:hover h1, .plan-proffesional:hover h1, .plan-master:hover h1{
+    color:hsl(240, 78%, 98%);
+}
+
+.plan-basic:hover button, .plan-proffesional:hover button, .plan-master:hover button{
+    background:white;
+    color:hsl(237, 63%, 64%);
+}
+
+.plan-content{
+    text-align: center;
+    margin:15px;
+}
+
+.switchBtn {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switchBtn input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .attribution{
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    font-size: medium;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    color:hsl(237, 63%, 64%);
+}
+
+@media(max-width: 1000px) and (min-width: 0px) {
+
+  .pricing{
+    margin-left:29%;
+  }
+
+  .container{
+    display:flexbox;
     flex-wrap: wrap;
-
-}
-
-.top1, .top2, .top3, .top4, .top5, .top6{
-    display:flex;
-    border-radius: 10px;
-    height:47px;
-    width:190px;
-    background-repeat: no-repeat;
-    background-size: 48px;
-    background-position-y: -6px;
-    background-position-x: 130px;
-} 
-
-.top1{
-   
-    background-color: hsl(15, 100%, 70%);
-    background-image: url("./images/icon-work.svg");
-       
-}
-
-.top2{
-    background-color: hsl(195, 74%, 62%);
-    background-image: url("./images/icon-play.svg");
-}
-
-.top3{
-    background-color: hsl(348, 100%, 68%);
-    background-image: url("./images/icon-study.svg");
-}
-
-.top4{
-    background-color: hsl(145, 58%, 55%);
-    background-image: url("./images/icon-exercise.svg");
-    background-position-y: 0px;
-    background-position-x: 125px;
-    background-size: 53px;
-}
-
-.top5{
-    background-color: hsl(264, 64%, 52%);
-    background-image: url("./images/icon-social.svg");
-    background-position-y: 0px;
-    background-size: 53px;
-}
-
-.top6{
-    background-color: hsl(43, 84%, 65%);
-    background-image: url("./images/icon-self-care.svg");
-}
-
-#report-parag{
-    margin:30px 0px -20px 20px;
-}
-
-
-@media(max-width: 1050px) and (min-width: 0px){
-    body{
-        display:flex;
-        height: fit-content;
-        flex-wrap: wrap;
-    }
-
-    .container{
-       
-        flex-wrap:wrap;
-    }
-
-    .profile{
-        margin-left:0px;
-    }
-
-    .box-container{
-        display:flex;
-        flex-wrap: wrap;
-        margin-top:-125px;
-        margin-left:0px;
-    }
-    .work, .play, .study, .exercise, .social, .care{
-    margin-top:37px;
-    }
-    
-    .top1, .top2, .top3, .top4, .top5, .top6{
-    margin-top:140px;
-    }
-
+    width: fit-content;
+    margin:30px 17%;
+  }
+  
 }
