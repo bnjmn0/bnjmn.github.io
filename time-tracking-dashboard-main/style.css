@@ -1,0 +1,163 @@
+* {
+    padding:0; 
+    
+}
+
+body{
+    color:wheat;
+    display:flex;
+    background-color: hsl(226, 43%, 10%);
+    justify-content: center;
+    align-items: center;
+    margin:120px;
+    margin-left:150px;
+}
+
+h1{
+    margin-left:20px;
+}
+
+h4{
+    margin-left:20px;
+}
+
+
+
+button{ 
+    margin-left:10px;
+}
+
+
+.container{
+    display:flex;
+    width: 850px;
+    height: 400px;  
+}
+
+.box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px 20px;
+    margin-left: 25px;
+}
+
+.profile{
+    display:flex;
+    height:385px;
+    flex-direction: column;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+}
+
+div.profile-img{
+    margin: 20px;
+    content:url("./images/image-jeremy.png");
+    width:60px;
+    height: 60px;
+}
+
+.p-top{
+    display:block;
+    background-color: hsl(246, 80%, 60%);
+    width: 190px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+.work, .play, .study, .exercise, .social, .care{
+    margin-top:33px;
+    display:flex;
+    width: 190px;
+    height: 147px;
+    background-color: hsl(235, 46%, 20%);
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+
+}
+
+.top1, .top2, .top3, .top4, .top5, .top6{
+    display:flex;
+    border-radius: 10px;
+    height:47px;
+    width:190px;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    background-position-y: -6px;
+    background-position-x: 130px;
+} 
+
+.top1{
+   
+    background-color: hsl(15, 100%, 70%);
+    background-image: url("./images/icon-work.svg");
+       
+}
+
+.top2{
+    background-color: hsl(195, 74%, 62%);
+    background-image: url("./images/icon-play.svg");
+}
+
+.top3{
+    background-color: hsl(348, 100%, 68%);
+    background-image: url("./images/icon-study.svg");
+}
+
+.top4{
+    background-color: hsl(145, 58%, 55%);
+    background-image: url("./images/icon-exercise.svg");
+    background-position-y: 0px;
+    background-position-x: 125px;
+    background-size: 53px;
+}
+
+.top5{
+    background-color: hsl(264, 64%, 52%);
+    background-image: url("./images/icon-social.svg");
+    background-position-y: 0px;
+    background-size: 53px;
+}
+
+.top6{
+    background-color: hsl(43, 84%, 65%);
+    background-image: url("./images/icon-self-care.svg");
+}
+
+#report-parag{
+    margin:30px 0px -20px 20px;
+}
+
+
+@media(max-width: 1050px) and (min-width: 0px){
+    body{
+        display:flex;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+
+    .container{
+       
+        flex-wrap:wrap;
+    }
+
+    .profile{
+        margin-left:0px;
+    }
+
+    .box-container{
+        display:flex;
+        flex-wrap: wrap;
+        margin-top:-125px;
+        margin-left:0px;
+    }
+    .work, .play, .study, .exercise, .social, .care{
+    margin-top:37px;
+    }
+    
+    .top1, .top2, .top3, .top4, .top5, .top6{
+    margin-top:140px;
+    }
+
+}
