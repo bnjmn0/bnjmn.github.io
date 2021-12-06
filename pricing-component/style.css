@@ -163,18 +163,3 @@ button{
     text-decoration: none;
     color:hsl(237, 63%, 64%);
 }
-
-@media(max-width: 1000px) and (min-width: 0px) {
-
-  .pricing{
-    margin-left:29%;
-  }
-
-  .container{
-    display:flexbox;
-    flex-wrap: wrap;
-    width: fit-content;
-    margin:30px 17%;
-  }
-  
-}
