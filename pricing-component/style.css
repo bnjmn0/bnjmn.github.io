@@ -174,8 +174,11 @@ button{
     display:flexbox;
     flex-wrap: wrap;
     width: fit-content;
-    margin:30px 7%;
+    margin-left:40px;
     gap:10px;
   }
-  
+  .plan-basic:hover, .plan-proffesional:hover, .plan-master:hover{
+    margin-left:-5px;
+    width:310px;
+  }
 }
