@@ -175,6 +175,7 @@ button{
     flex-wrap: wrap;
     width: fit-content;
     margin:30px 7%;
+    gap:10px;
   }
   
 }
