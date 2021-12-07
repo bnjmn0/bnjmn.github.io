@@ -48,7 +48,7 @@ button{
     display:flex;
     flex-wrap: wrap;
     width:200px;
-    margin-left:605px;
+    margin:0 auto;
     justify-content: center;
     font-size:small;
     color:hsl(234, 14%, 74%);
@@ -57,8 +57,8 @@ button{
 .container{
     display:flex;
     flex-direction: row;
-    width:1000px;
-    margin:60px 250px;
+    width:fit-content;
+    margin:40px auto;
     gap:3px;
     font-size: medium;
 }
@@ -91,7 +91,7 @@ button{
 
 .plan-content{
     text-align: center;
-    margin:15px;
+    margin:15px auto;
 }
 
 .switchBtn {
@@ -164,21 +164,26 @@ button{
     color:hsl(237, 63%, 64%);
 }
 
-@media(max-width: 1000px) and (min-width: 0px) {
+@media(max-width: 700px) and (min-width: 0px) {
+
+  html{
+    display:flexbox;
+    align-content: center;
+    margin:0 auto;
+  }
 
   .pricing{
-    margin-left:19%;
+    margin:0 auto;
   }
 
   .container{
-    display:flexbox;
-    flex-wrap: wrap;
-    width: fit-content;
-    margin-left:40px;
+    flex-direction: column;
+    margin:60px 60px auto;
     gap:10px;
   }
   .plan-basic:hover, .plan-proffesional:hover, .plan-master:hover{
     margin-left:-5px;
+    margin-bottom:-10px;
     width:310px;
   }
 }
