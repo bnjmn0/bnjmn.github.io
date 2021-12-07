@@ -165,13 +165,6 @@ button{
 }
 
 @media(max-width: 700px) and (min-width: 0px) {
-
-  html{
-    display:flexbox;
-    align-content: center;
-    margin:0 auto;
-  }
-
   .pricing{
     margin:0 auto;
   }
@@ -179,6 +172,7 @@ button{
   .container{
     flex-direction: column;
     margin:60px 60px auto;
+    margin-bottom:60px;
     gap:10px;
   }
   .plan-basic:hover, .plan-proffesional:hover, .plan-master:hover{
